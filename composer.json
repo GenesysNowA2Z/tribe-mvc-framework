@@ -1,0 +1,24 @@
+{
+    "name": "tribe/mvc-framework",
+    "authors": [
+        {
+            "name" : "Vincent J. Rahming",
+            "email" : "vincent@genesysnow.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\" : "./"
+        },
+        "classmap": ["core/console/commands"]
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "twilio/sdk": "^8.3",
+        "ext-ssh2": "*",
+        "ext-dom": "*",
+        "sendgrid/sendgrid": "~7",
+        "phpoffice/phpspreadsheet": "^1.22",
+        "symfony/console": "^7.2"
+    }
+}

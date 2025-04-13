@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+    require __DIR__ .'/vendor/autoload.php';
+
+    use app\core\console\commands\CreateController;
+    use app\core\console\commands\CreateResource;
+    use app\core\console\commands\DeleteController;
+    use app\core\console\commands\CreateModel;
+    use Symfony\Component\Console\Application;
+    use app\core\Console\Commands;
+
+    $console = new Application();
+    $console->add( new CreateController());
+    $console->add( new CreateResource());
+    $console->add( new DeleteController());
+    $console->add( new CreateModel());
+    $console->run();
